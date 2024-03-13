@@ -9,5 +9,6 @@ int main(){
 
 	testing.contents["hello"].push_back("aloo");
 	testing.contents["aloo"].push_back("hello");
+	printout(testing);
 	return 0;
 }

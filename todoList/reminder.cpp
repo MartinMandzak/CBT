@@ -6,6 +6,7 @@
  * <3
  */
 
+#include <iostream>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -23,4 +24,13 @@ std::vector<string> get_keys(Reminder r){
 		keys.push_back(pair.first);
 	}
 	return keys;
+}
+
+void printout(Reminder r){
+	for(auto& pair : r.contents){
+		std::cout<<pair.first<<"\n";
+		for(string el : pair.second){
+			std::cout<<"\t"<<el<<"\n";
+		}
+	}
 }

@@ -14,5 +14,6 @@ struct Reminder {
 
 std::vector<string> get_keys(Reminder r);
 
+void printout(Reminder r);
 #endif // REMINDER_H
 
